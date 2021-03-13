@@ -58,7 +58,7 @@
         	<p>19 years</p>
         	<h6>Location:</h6>
         	<p >Kazakhstan, Karaganda</p></div>
-        	<img src="C:\MY\htdocs\mysite\pro.jpg" style="height: 200px; float: left; margin-right: 90px; margin-top: -20px" alt="">
+        	<img src="/images/pro.jpg" style="height: 200px; float: left; margin-right: 90px; margin-top: -20px" alt="">
         	<h2 style="color: lightgreen; margin-top: -35px ">My motto all my life</h2>
         	<p style="margin-right: 150px; margin-top: 30px; margin-bottom: 10px">Life changes very quickly, in a very positive way, if you let it <br> <br> (Lindsey Vonn)</p> <br>	
             <button class="btn-primary" style="width: 10%; padding:3px; " onclick="inn()">My skiils</button>      

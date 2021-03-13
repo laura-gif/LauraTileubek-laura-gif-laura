@@ -15,7 +15,7 @@
 
 		    	<nav class="menu1"style="padding-top:20px;" >
 					<ul style="list-style-type: none; justify-content: center; display: flex;">
-			   				 <li style="width:18%; padding-left:50px"onclick="window.location.reload()"><a href="#" ><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/home-512.png" alt="hjg" style="width: 18%; margin-right:14px;">MAIN </a> </li>
+			   				 <li style="width:18%; padding-left:50px"onclick="window.location.reload()"><a href="{{ route('main') }}" ><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/home-512.png" alt="hjg" style="width: 18%; margin-right:14px;">MAIN </a> </li>
 						
 
 								<li style="width: 13%" id="n2" >
@@ -24,7 +24,7 @@
 								</li>
 				
 								<li style="width:13%;" id="n3">
-									<a href="#">
+									<a href="{{ route('abme') }}">
 									<img src="https://cdn.onlinewebfonts.com/svg/img_398816.png" alt="jkk" style="width: 19%; margin-right:15px;" >ABOUT ME</a>
 								</li>
 					</ul>
@@ -40,7 +40,7 @@
 	    </div></a>
 
 	     <div class="pro" style="background-image: url(https://cdn.hipwallpaper.com/i/36/0/F98gvs.jpg); background-size: cover; height: 660px;">
-         	<img src="C:\MY\htdocs\mysite\u.jpeg" alt="" style="width: 36.7%; height: 100;float: left" id="image">
+         	<img src="/images/u.jpeg" alt="" style="width: 36.7%; height: 100;float: left" id="image">
          <div class="contact-form">
          	<h1>Contact Me</h1>
          	<div class="textv">

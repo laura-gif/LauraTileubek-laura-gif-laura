@@ -42,7 +42,7 @@
 	    </div></a>
      
 		<div style="display: flex; padding-bottom: 20px; height:570px; margin-bottom: -15px" class="basc">
-			     <img src="/as1.png" alt="j" style="width: 550px; height: 570px;  margin-right:100px; display: flex">
+			     <img src="/images/as1.png" alt="j" style="width: 550px; height: 570px;  margin-right:100px; display: flex">
 			     <h1 style=" font-family: Brush Script MT, Brush Script Std, cursive; letter-spacing:5px; transition: 1s; color: black;  font-size:90px; margin-top:80px; " id="welc">Laura </h1><h1  style=" font-family: Brush Script MT, Brush Script Std, cursive; letter-spacing:5px; transition: 1s; color: black;  font-size:90px; margin-top:150px; ">Tileubek</h1>
 			     <p style="font-size: 25px; margin-top:300px; margin-left:-500px; margin-right: 150px; font-family: fantasy">Student of SDU. Novice programmer. I focus all my efforts on creating a better and more comfortable life for myself and my family. My goal is to become the best version of myself</p>
         </div>
@@ -154,8 +154,7 @@
                  
                 <p style="margin-top: 150px;">Copyright © 2021 Laura Tileubek - made by laura</p>
             </div>
-   </body>
-   <script>
+            <script>
 
 		   function out(){
 			document.querySelector('.tat').style.display="none";
@@ -164,4 +163,6 @@
 			document.querySelector('.tat').style.display="block";
 		}
    </script>
+   </body>
+   
 </html>

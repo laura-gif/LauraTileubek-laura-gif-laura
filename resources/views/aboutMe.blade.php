@@ -42,7 +42,7 @@
            	</div>
          <div style="background-image: url(http://www.zwalls.ru/pic/201309/1280x800/zwalls.ru-16554.jpg); background-size: cover; height: 700px;padding-right: 80px">
 
-         	<img src="C:\MY\htdocs\mysite\u2.jpeg" alt="" style="height: 100%; float: left; margin-right: 90px;">
+         	<img src="/images/u2.jpeg" alt="" style="height: 100%; float: left; margin-right: 90px;">
          	 <hr>
             <h3 style="margin-bottom: 30px; font-size: 30px; margin-top: 30px;color: black">Family</h3>
            	<p style="font-family: fantasy; font-size: 28px; color: grey; margin-bottom: 80px">I was born on October 11, 2001 in Karaganda. I am the youngest in the family. And so I was very moody. I have two brothers and one sister. And for me, <br> my family always comes first.</p>

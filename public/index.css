@@ -1,0 +1,209 @@
+
+.contact-form{
+	width: 85%;
+	max-width: 600px;
+	background: #f1f1f1;
+	position: absolute;
+	margin-top: 60px;
+	left: 47%;
+	transform: translate(-50%;-50%);
+	padding:30px,40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+	font-family: "Montserrat", sans-serif;
+
+}
+.contact form h1{
+	margin-top: 0;
+	font-weight: 200;
+}
+
+.basc{
+    		background-color: purple;
+    		background-image: url(pp.jpg);
+    		background-size: 100%;
+
+    	}
+ 
+    	
+		.menu1{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			font-family: Cuprum, Arial, Helvetical, sans-serif;
+			border-right: 1px solid #c7c8ca;
+			padding-right:130px;
+		}
+
+		.menu1 li ul{
+			display: none;
+			position: absolute;
+			min-width: 210px;
+			margin-left: -40px;
+			z-index: 1;
+		}
+
+		.menu1 li:hover>ul{
+			display: block;
+		}
+		.menu1 li>ul li{
+			border:1px solid #c7c8ca;
+		}
+		.menu1 li>ul li a{
+			padding: 10px;
+			text-transform: none;
+			}
+
+		.menu1>ul li a{
+			color: black;
+			display: block;
+			background:#ececed;
+			font-size: 12px;
+			text-decoration: none;
+			padding: 15px 13px 15px 25px;
+			text-transform: none;
+			transition: all 0.3s ease;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+			background: rgb(255,255,255); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+			}
+
+		.menu1 li a:hover{
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
+background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+		}
+      .dws{
+      	position: fixed;
+      	top: 80%;
+      	left: 4%;
+      	transform: translate(-50%,-50%);
+        
+      }
+      .pulse{
+      	background:#5CC2E2;
+      	position: relative; 
+      	transition: .5s;
+      }
+      .phone{
+      	font-size: 50px;
+      	line-height: 94px;
+      	animation: phone .9s ease-in-out infinite;
+      }
+      .bloc{
+      	cursor: pointer;
+      	z-index: 1;
+      	overflow: hidden;
+      }
+      .pulse,.bloc,.phone{
+      	position: absolute;
+      	width: 90px;
+      	height: 90px;
+      	color: #fff;
+      	text-align: center;
+      	border-radius: 50%;
+      }
+      .pulse:hover .phone{
+      	opacity: 0;
+
+      }
+      .pulse:hover{
+      	background:#29AEE3;
+      }
+      .text{
+      	opacity: 0;
+      	position: absolute;
+        text-transform: uppercase;
+        font-weight: 700;
+        top: 25px;
+        font-size: 15px;
+        transform: scaleX(-1);
+        transition: .5s ease-in-out;
+      }
+      .pulse:hover .text{
+      	transform: scaleX(1);
+      	transition: .5s ease-in-out;
+      	opacity: 1;
+
+      }
+      .pulse:hover i{
+      	transform: scaleX(1);
+      	transition: .5s ease-in-out;
+      	opacity: 1;
+      }
+      .pulse:hover::before,
+      .pulse:hover::after{
+      	content: '';
+      	position: absolute;
+      	border:1px solid #29AEE3;
+      	left: -20px;
+      	right: -20px;
+      	top: -20px;
+      	bottom: -20px;
+      	border-radius: 50%;
+      	animation: pulse 1.8s linear infinite;
+      	opacity: 0;
+      }
+      .pulse:hover::after{
+      	animation-delay: .5s;
+      }
+      .phone i{
+      	transition: .5s ease-in-out;
+      }
+      @keyframes phone{
+      	0%, 100%{
+      		transform: rotate(-28deg);
+
+      	}
+      	50%{
+      		transform: rotate(21deg);
+      	}
+      }
+      @keyframes pulse{
+      	0%{
+      		transform: scale(0.5);
+      		opacity: 0;
+      	}
+      	50%{
+      		opacity: 1;
+      		      	}
+        100%{
+        	transform: scale(1.2);
+        	opacity: 0;
+        }
+      }
+
+
+      .tat{
+			position: fixed;
+			top: 0px;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+            display: none;
+			background-color: rgb(0, 0, 0, 0.5); 
+			align-items: center;
+			z-index: 1;
+			}
+		.tat1{
+			background-size: cover;
+			color: white;
+			width: 500px;
+			height: 490px;
+			padding-left: 70px;
+			padding-right: 30px;
+			border-radius:10px; 
+			padding-top: 20px;
+			text-align: center;
+			margin-top: 60px;
+			margin-left: 420px;
+			background-image: url(https://sun9-35.userapi.com/c604728/v604728728/312f/zMDE4zVZCyk.jpg); 
+		}

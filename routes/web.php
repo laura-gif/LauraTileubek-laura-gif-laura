@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
+use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +24,10 @@ Route::get('/contact', function(){
 Route::get('/abme', function(){
 	return view('aboutMe');
 })->name('abme');
-
+Route::get('/post/create', function(){
+DB::table('post')->insert([
+'id'=>1,
+'title'=>'It is a title',
+'body'=>'It is a body'
+]);
+});

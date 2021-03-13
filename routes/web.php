@@ -31,3 +31,8 @@ DB::table('post')->insert([
 'body'=>'It is a body'
 ]);
 });
+
+Route::get('/post', function(){
+$post=Post::find(1);
+return $post;
+});

@@ -39,3 +39,9 @@ $post=Post::find(1);
 return $post;
 });
 
+Route::get('blog/index',[BlogController::class,'index']);
+
+Route::get('blog/create',function(){
+	return view('blog.create');
+});
+Route::post('blog/create',[BlogController::class,'store'])->name('add-post');

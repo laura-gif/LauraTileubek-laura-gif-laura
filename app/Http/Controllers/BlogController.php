@@ -3,9 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Models\Post;
+
+use App\Models\Post;
 
 class BlogController extends Controller
 {
-   
+    public function index(){
+    	$post = Post::all();
+
+    	return view('blog.index')->with(['post'=>$post]);
+    }
+    public function store(Request $request){
+    	Post::create([
+    	'id'=>$request->id,
+    	'title'=>$request->title,
+    	'body'=>$request->body
+    ]);
+    	return back();
+
+    }
 }

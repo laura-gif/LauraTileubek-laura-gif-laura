@@ -26,18 +26,20 @@ Route::get('/contact', function(){
 Route::get('/abme', function(){
 	return view('aboutMe');
 })->name('abme');
+
 Route::get('/post/create', function(){
 DB::table('post')->insert([
-'id'=>1,
+'id'=>9,
 'title'=>'It is a title',
 'body'=>'It is a body'
 ]);
 });
 
 Route::get('/post', function(){
-$post=Post::find(1);
+$post=Post::find(9);
 return $post;
 });
+
 
 Route::get('blog/index',[BlogController::class,'index']);
 

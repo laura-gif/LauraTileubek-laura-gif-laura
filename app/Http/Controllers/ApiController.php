@@ -14,4 +14,14 @@ class ApiController extends Controller
 
      return response($post,200);
          }
+
+     public function get_posts(Request $request){
+     	$posts = Post::find($request->post_id);
+
+     	if($posts==null){
+     		return response(['message'=>'There is no post'], 404);
+
+     	}
+     	return response($posts,200);
+     }
 }

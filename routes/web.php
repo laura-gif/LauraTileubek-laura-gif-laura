@@ -4,8 +4,11 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
+use App\Models\Lab;
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UploadFileController;
+use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,3 +52,12 @@ Route::get('blog/create',function(){
 Route::post('blog/create',[BlogController::class,'store'])->name('add-post');
 
 Route::get('post/{id}',[BlogController::class,'get_post']);
+
+Route::post('la/lab9',[UploadFileController::class,'sub'])->name('add-la');
+Route::get('la/lab9',function(){
+	return view('la.lab9');
+});
+
+Route::get('la/index',[UploadFileController::class,'index']);
+
+Route::get('mail/send',[MailController::class,'send']);

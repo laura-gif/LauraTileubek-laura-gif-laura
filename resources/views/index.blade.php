@@ -356,7 +356,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
             		
     			<ul style="list-style-type: none; margin-left: 100px">
                     <li>
-                    	<a href="https://www.instagram.com/bitlabacademy" target="_blank"><img src="https://pngicon.ru/file/uploads/telegram.png" alt="j" style="width:3.2%; margin-left: -60px; margin-right: 10px; margin-top: 70px; float: left">
+                    	<a href="https://www.instagram.com/bitlabacademy" target="_blank"><img src="https://proxy.imgsmail.ru/?email=a9959627%40mail.ru&e=1507893258&h=TxQqsu-PBa9NHNTDvD4obA&url171=aW1nLnN0YXJ0ZW1sLmNvbS9ydS91c2VyX2ZpbGU_cmVzb3VyY2U9aGltZyZ1c2VyX2lkPTc0MjYyMiZuYW1lPTZmY3RjNGlhOWhxZTM5NXp0OXo1d3Juamp4ZTZjaDN6aXIzNzRpMzNpZWd3NzZvN245NGRmcnV1bzhjaDh6bWhydWZjcXpiOG9naTU4YQ~~&is_https=0" alt="j" style="width:3.9%; margin-left: -60px; margin-right: 10px; margin-top: 64px; float: left">
                     	</a>
                     </li>
 				    

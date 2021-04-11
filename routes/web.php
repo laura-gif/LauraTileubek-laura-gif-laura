@@ -9,6 +9,7 @@ use App\Models\Lab;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadFileController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\LocalizationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,14 +22,8 @@ use App\Http\Controllers\MailController;
 */
 
 
-Route::get('/main', function(){
-	return view('index');
-})->name('main');
-Route::get('/contact', function(){
-	return view('contact');})->name('contact');
-Route::get('/abme', function(){
-	return view('aboutMe');
-})->name('abme');
+
+
 
 Route::get('/post/create', function(){
 DB::table('post')->insert([
@@ -60,4 +55,24 @@ Route::get('la/lab9',function(){
 
 Route::get('la/index',[UploadFileController::class,'index']);
 
+Route::post('/uploadfile',[UploadFileController::class,'showUpload']);
+Route::get('/uploadfile',[UploadFileController::class,'in']);
+
+
 Route::get('mail/send',[MailController::class,'send']);
+
+
+Route::get('main/{lang}',function($lang){
+	App::setlocale($lang);
+	return view('index');
+})->name('main');
+
+Route::get('/contact/{lang}', function($lang){
+	App::setlocale($lang);
+	return view('contact');})->name('contact');
+
+
+Route::get('/abme/{lang}', function($lang){
+	App::setlocale($lang);
+	return view('aboutMe');
+})->name('abme');
